@@ -1,8 +1,21 @@
 <script setup>
 import HelloWorld from '@/components/HelloWorld.vue'
+// variable
+let msg = 0
+</script>
+
+<script>
+export default {
+  data() {
+    return {
+      xx: '1',
+    }
+  },
+}
 </script>
 
 <template>
+  <v-btn> {{ msg }} {{ xx }}</v-btn>
   <div>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
@@ -13,10 +26,10 @@ import HelloWorld from '@/components/HelloWorld.vue'
   </div>
   <HelloWorld msg="Vite + Vue" />
   <!-- <p> -->
-    <!-- use router-link component for navigation. -->
-    <!-- specify the link by passing the `to` prop. -->
-    <!-- `<router-link>` will be rendered as an `<a>` tag by default -->
-    <!-- <router-link to="/home">Go to Foo</router-link>
+  <!-- use router-link component for navigation. -->
+  <!-- specify the link by passing the `to` prop. -->
+  <!-- `<router-link>` will be rendered as an `<a>` tag by default -->
+  <!-- <router-link to="/home">Go to Foo</router-link>
     <router-link to="/bar">Go to Bar</router-link> -->
   <!-- </p> -->
   <!-- route outlet -->
